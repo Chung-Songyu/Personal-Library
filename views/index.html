@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Personal Library</title>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="../public/style.css">
+  </head>
+
+  <body>
+	  <header>
+		  <h1>Personal Library</h1>
+	  </header>
+	  <br>
+
+    <div id='sampleui'>
+      <form id="newBookForm">
+        <label for="bookTitleToAdd"></label>
+        <input type="text" id="bookTitleToAdd" name="title" placeholder="Harry Potter and the Philosopher's Stone">
+        <button type="submit" id="newBook" value="Submit">Submit New Book!</button>
+      </form>
+      <div id="container">
+        <div class="heading shadow" id="list">List</div>
+        <div class="box shadow" id='display'></div>
+        <button class="shadow" id='deleteAllBooks'>Delete ALL books</button>
+        <div class="heading shadow" id="info">Info</div>
+        <div class="box shadow" id='bookDetail'>
+          <p id='detailTitle'>Select a book to see its details and comments</p>
+          <ol id='detailComments'></ol>
+          <p id='detailForms'></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="../public/client.js"></script>
+  </body>
+</html>
